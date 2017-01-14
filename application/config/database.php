@@ -67,10 +67,10 @@ define('DB_PASS', $connection_info['pass']);
 
 
 
-$db['default']['hostname'] = constant("DB_HOST");
-$db['default']['username'] = constant("DB_USER");
-$db['default']['password'] = constant("DB_PASS");
-$db['default']['database'] = constant("DB_DATABASE");
+$db['default']['hostname'] = 'localhost';
+$db['default']['username'] = 'root';
+$db['default']['password'] =  '';
+$db['default']['database'] = 'cloud';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;

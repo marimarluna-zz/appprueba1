@@ -60,17 +60,17 @@ if(isset($_ENV['CLEARDB_DATABASE_URL'])){
 // Parse connection url
 $connection_info = parse_url($url);
 
-define('DB_HOST', $connection_info['host']);
-define('DB_DATABASE', substr($connection_info['path'], 1));
-define('DB_USER', $connection_info['user']);
-define('DB_PASS', $connection_info['pass']);
+//define('DB_HOST', $connection_info['host']);
+//define('DB_DATABASE', substr($connection_info['path'], 1));
+//define('DB_USER', $connection_info['user']);
+//define('DB_PASS', $connection_info['pass']);
 
 
 
-$db['default']['hostname'] = constant("DB_HOST");
-$db['default']['username'] = constant("DB_USER");
-$db['default']['password'] = constant("DB_PASS");
-$db['default']['database'] = constant("DB_DATABASE");
+$db['default']['hostname'] = 'us-cdbr-iron-east-04.cleardb.net';
+$db['default']['username'] = 'b622e6d6d21b47';
+$db['default']['password'] = '5c5ae99b';
+$db['default']['database'] = 'heroku_ea7c986fec8b2d6';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
